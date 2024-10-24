@@ -51,7 +51,7 @@ function Register(){
                 })};
 
                 if(userFound){
-                    setError("UserName already exist")
+                    setError("Username already exist")
                     return;
                 }else{
                     const data ={
@@ -83,8 +83,6 @@ function Register(){
         <div className="max-w-[600px] mx-auto p-8 shadow-xl rounded-lg bg-white bg-opacity-80 backdrop-blur-lg">
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold text-gray-800">Register</h1>
-              {/* <p className="text-sm text-gray-500">Fill in your details to register</p> */}
-
             </div>
             <form action="">
                 <div className="mb-5">

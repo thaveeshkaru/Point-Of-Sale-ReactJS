@@ -48,8 +48,6 @@ function Login(){
             <div className="max-w-[600px] mx-auto p-8 shadow-xl rounded-lg bg-white bg-opacity-80 backdrop-blur-lg">
                 <div className="text-center mb-8">
                   <h1 className="text-3xl font-bold text-gray-800">Login</h1>
-                  {/* <p className="text-sm text-gray-500">Please enter your credentials to log in</p> */}
-
                 </div>
                 <form action="">
                     <div className="mb-3">

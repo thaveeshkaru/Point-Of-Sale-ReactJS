@@ -5,9 +5,8 @@ import { useAuth } from "../../context/AuthContext";
 import html2pdf from "html2pdf.js";
 
 function OrderInvoice(){
-    // const [orderedItem, setOrderedItem] = useState<OrderType[]>([]);
     const [cart, setCart] = useState<any[]>([]);
-   const [orderId, setOrderId] = useState<number>(0);
+    const [orderId, setOrderId] = useState<number>(0);
     const [grandTotalPrice, setGrandTotalPrice] = useState<number>(0);
     const [subTotalPrice, setSubTotalPrice] = useState<number>(0);
     const [discount, setDiscount] = useState<number>(0);
@@ -91,7 +90,7 @@ function OrderInvoice(){
                         <thead>
                             <tr className="bg-slate-200 text-sm text-slate-600">
                                 <th className="p-3 w-[70px] text-left">#</th>
-                                <th className="p-3 w-[200px] text-left">Item</th>
+                                <th className="p-3 w-[200px] text-left">Item Name</th>
                                 <th className="p-3 w-[200px] text-left">Description</th>
                                 <th className="p-3 w-[50px] text-left">Price(Rs)</th>
                             </tr>
@@ -110,7 +109,7 @@ function OrderInvoice(){
                         </tbody>
                     </table>
                 </div>
-                <div className="bg-gray-100 p-5 rounded-lg shadow-md mt-10">
+                <div className="bg-gray-100 p-5 rounded-lg shadow-md mt-12">
                     <div className="flex justify-between py-2">
                         <span className="font-medium text-gray-700">Sub Total:</span>
                         <span className="font-semibold text-gray-900 text-right">Rs {subTotalPrice.toFixed(2)}</span>
@@ -135,7 +134,7 @@ function OrderInvoice(){
                 </div>
                 <div className="mt-10 text-center" data-html2canvas-ignore>
                     <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-semibold mr-3" onClick={handleContinueShopping}>
-                    Continue Shopping
+                    Continue
                     </button>
                     <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-semibold mt-3" onClick={handleDownloadInvoice} >
                     Download

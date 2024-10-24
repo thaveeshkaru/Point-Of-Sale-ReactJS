@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import backgroundImage from "/images/bgnew2.webp";
+import backgroundImage from "/images/bgHome.webp";
 
 function Home(){
     const navigate = useNavigate();
@@ -14,14 +14,14 @@ function Home(){
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                             </svg>
-                            <h1 className="text-3xl font-semibold text-left justify-between hover:scale-105">POS Home</h1>
+                            <h1 className="text-3xl font-semibold text-left justify-between hover:scale-105">Smart POS</h1>
                         </div>
                        <button className="relative text-blue-600 bg-white hover:bg-red-500 hover:text-white font-medium rounded-xl text-xs sm:text-sm sm:px-6 sm:py-2.5 px-4 py-2" onClick={logout}>Log Out</button>
                     </div>                  
                 </div>
 
                 <div className="flex flex-col mt-28 m-5">
-                    <h2 className="text-4xl font-semibold text-gray-700 mb-14 text-left">Welcome to POS system</h2>
+                    <h2 className="text-4xl font-semibold text-gray-700 mb-14 text-left">Welcome to Smart POS system</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full cursor-pointer">
                         <div className="p-6 bg-white rounded-lg shadow-lg hover:scale-105 bg-opacity-90  backdrop-blur-sm" onClick={()=> navigate("/item")}>
                             <h3 className="text-xl font-semibold text-gray-700 ">Item</h3>
