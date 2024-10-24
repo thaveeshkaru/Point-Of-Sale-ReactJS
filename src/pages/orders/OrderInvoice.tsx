@@ -102,7 +102,7 @@ function OrderInvoice(){
                                     <td className="p-3 text-left">{item.itemCode}</td>
                                     <td className="p-3 text-left">{item.itemName}</td>
                                     <td className="p-3 text-left">{item.description}</td>
-                                    <td className="p-3 text-left">{item.price.toFixed(2)}</td>
+                                    <td className="p-3 text-left">{item.price}</td>
                                 </tr>
                             )
                             })}
@@ -133,7 +133,7 @@ function OrderInvoice(){
                     </div>
                 </div>
                 <div className="mt-10 text-center" data-html2canvas-ignore>
-                    <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-semibold mr-3" onClick={handleContinueShopping}>
+                    <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-semibold mr-3 " onClick={handleContinueShopping}>
                     Continue
                     </button>
                     <button className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-semibold mt-3" onClick={handleDownloadInvoice} >

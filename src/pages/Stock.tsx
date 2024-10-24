@@ -74,7 +74,7 @@ function Stock(){
 
         if (quantityOnHand === 0) {
             return { status: 'Out of Stock', className: 'text-red-600' };
-          } else if (quantityOnHand < 10) {
+          } else if (quantityOnHand < 50) {
             return { status: 'Low Stock', className: 'text-red-600' };
           } else {
             return { status: 'Well Stocked', className: 'text-green-600' };
@@ -148,7 +148,7 @@ function Stock(){
                 <div className="bg-white p-6 rounded-lg shadow-lg mb-10">
                     
                     <h1 className="text-slate-800 text-2xl font-bold mb-6">
-                    {isEdit ? "Edit Stock" : "Add Stock "}
+                    {isEdit ? "Edit Stock" : "Add Stock " }
                     </h1>
                         
                     <form>
