@@ -144,10 +144,10 @@ function Stock(){
                 </div>
             </div>
     
-            <div className="container mx-auto mt-20">
+            <div className="container mx-auto mt-16">
                 <div className="bg-white p-6 rounded-lg shadow-lg mb-10">
                     
-                    <h1 className="text-slate-800 text-2xl font-bold mb-6">
+                    <h1 className="text-2xl font-bold mb-6">
                     {isEdit ? "Edit Stock" : "Add Stock " }
                     </h1>
                         
@@ -172,6 +172,7 @@ function Stock(){
                                 <label className="text-gray-700 text-sm font-medium block mb-2">Location</label>
                                 <input type="text" id="productName" className="text-slate-600 font-sm block mb-3 w-full px-3 py-2 border border-slate-300 rounded-lg" value={location} onChange={handleLocation} required />
                             </div>
+                            
                         </div>
 
                         <button type="button" className="w-full lg:w-auto bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 shadow-lg" onClick={handleSubmit}>
@@ -183,7 +184,7 @@ function Stock(){
                 <div className="relative overflow-x-auto bg-white p-6 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-bold mb-6">Stock List</h2>
                     <table className="table-auto min-w-full bg-gray-100 shadow rounded-lg">
-                        <thead className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
+                        <thead className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm uppercase">
                             <tr>
                             <th className="p-3 w-[50px] text-left">#</th>
                             <th className="p-3 w-[100px] text-left">Item Code</th>

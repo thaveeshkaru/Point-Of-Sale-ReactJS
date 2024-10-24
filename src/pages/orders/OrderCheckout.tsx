@@ -86,7 +86,7 @@ function OrderCheckout() {
               <div className="relative overflow-x-auto p-5 lg:w-[60%] border-r border-slate-300 bg-white rounded-lg shadow-lg ">
                 <table className="table-auto w-full ">
                   <thead>
-                    <tr className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
+                    <tr className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white ">
                       <th className="p-4 w-[50px] text-left">#</th>
                       <th className="p-4 w-[200px] text-left">Item Name</th>
                       <th className="p-4 w-[200px] text-left">Description</th>

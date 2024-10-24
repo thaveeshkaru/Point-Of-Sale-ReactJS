@@ -123,7 +123,7 @@ function Item(){
     },[isAuthenticated]);
 
     return(
-        <div className="min-h-screen bg-gray-50 py-8 px-4 lg:px-8 bg-gray-50">
+        <div className="min-h-screen bg-gray-50 py-8 px-4 lg:px-8">
             <div className="fixed top-0 left-0 right-0 bg-blue-600 text-white py-4 px-8 shadow-lg z-50">
                 <div className="flex flex-col sm:flex-row justify-between items-center">
                     <h1 className="text-3xl font-semibold tracking-wide hover:scale-105">Item</h1>
@@ -154,7 +154,7 @@ function Item(){
                 </div>
             </div>
             <div className="container mx-auto mt-20">
-                <div className=" bg-white rounded-lg shadow-lg p-6 mb-10 bg-opacity-90  backdrop-blur-sm">
+                <div className=" bg-white rounded-lg shadow-lg p-6 mb-10">
             
                     <h2 className="text-2xl font-bold mb-6">
                         {isEdit ? "Edit Item" : "Add Item"}
@@ -198,7 +198,7 @@ function Item(){
             <div className="relative overflow-x-auto bg-white rounded-lg shadow-lg p-6">
                 <h2 className="text-2xl font-bold mb-6">Items List</h2>
                 <table className="table-auto min-w-full bg-gray-100 rounded-lg">
-                    <thead className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
+                    <thead className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm uppercase">
                         <tr>
                             <th className="p-3 w-[50px] text-left">#</th>
                             <th className="p-3 w-[200px] text-left">Item Name</th>

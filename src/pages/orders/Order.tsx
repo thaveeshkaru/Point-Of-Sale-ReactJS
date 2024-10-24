@@ -74,7 +74,7 @@ function Order(){
             <div className="relative overflow-x-auto bg-white rounded-lg shadow-lg p-6">
             <h2 className="text-2xl font-bold mb-6">Order List</h2>
                 <table className="table-auto min-w-full bg-gray-100 rounded-lg">
-                    <thead className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
+                    <thead className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm uppercase">
                         <tr>
                             <th className="p-3 w-[50px] text-left">#</th>
                             <th className="p-3 w-[200px] text-left">Order Date And Time</th>
