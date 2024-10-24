@@ -1,6 +1,6 @@
 interface CategoryType{
     categoryID: number;
-    categoryName: String;
+    categoryName: string;
 }
 
 export default CategoryType;
